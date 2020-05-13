@@ -1,0 +1,23 @@
+# Learning Components
+
+## Optimization
+Optimizing metrics can be used to guide the learning process, by optimizing model parameters based on this metric, 
+the learning algorithm should produce desirable outputs.
+<br>
+E.g. Mean Squared Error : For every sample, we produce an output. We compare this to the expected ground truth and determine the difference
+$MSE = \frac{1}{N}\displaystyle\sum\limits_{i=1}^N (output-y_i)^2 $
+
+Once we chose an optimization metric, we need select an algorithm to optimize the parameters.
+For this course we will mostly use linear descent. 
+
+## Evaluation
+- Appropriate measure of performance for the task
+- Might differ from optimization metric (e.g. In classification, we might be concerned with accuracy of final classifications by looking algorithm
+percentages of correct classifications, as opposed to looking at MSE)
+
+## Generalization
+This concept describes the issues regarding **overfitting** and how training an algorithm to closely to your known input can cause issues 
+when trying to predict for a previously unseen input. If the algorithm is not closely enough related to the input data, this is known as
+**underfitting**.
+
+

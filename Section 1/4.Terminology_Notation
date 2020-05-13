@@ -1,0 +1,34 @@
+# Terminology and Notation
+
+## Features
+ Individual attributes that can be measured or recorded about an event or entity. Categorical or numerical data.
+- These are shown in a vector form. For example if looking at the states for the COVID-19 statistics
+$ x=\begin{bmatrix}confirmed\ cases  \\tests\ conducted \\ deaths\\ recoveries \end{bmatrix}$
+
+
+## Labels, Hyperparameters
+- Not to be confused with learned model parameters
+- Determined by processes other than learning algorithm
+- May impact **how** model learns
+
+In supervised learning, ground truth is denoted at:
+$y= \begin{bmatrix} y_1 \\ y_2 \\ \vdots\\ y_k \end{bmatrix}$ 
+
+And the predicted output is denoted as:
+$y= \begin{bmatrix} \hat{y_1} \\ \hat{y_2} \\ \vdots\\ \hat{y_k} \end{bmatrix}$
+
+## Training, Validation and Testing Sets
+
+Training set:
+- Collection of examples used to train
+- Learn from these to perform parameter updates
+
+Validation set:
+- Separate from training set
+- Does not update parameters
+- Validate current models to check generalization
+- Perhaps change hyperparamters
+
+Test set:
+- Separate from training and Validation Sets
+- Used once training/validation is complete

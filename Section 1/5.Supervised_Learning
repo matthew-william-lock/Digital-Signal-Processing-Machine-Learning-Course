@@ -1,0 +1,27 @@
+# Supervised Learning
+
+## The scenario
+
+<a name="scenario">![images/Sl_Scenario.png](images/Sl_Scenario.png)
+
+## The Process
+
+<a name="SL_Process">![images/SL_Process.png](images/SL_Process.png)
+
+- On the left hand side we have our data set D (This has been split)
+- we have corresponding labels for data
+
+The general procedure is as follows:
+1. Start in the learning phase 
+    - Training set data fed as an input to the model
+    - This is compared to the ground truth 
+    - Loss metric will indicate how well the model is performing
+    - This will tell us how to update parameters theta
+    - After some repetitions, perform validation using validation set
+2. Testing
+    - Model has fixed parameters
+    - Evaluate how well the model performs
+    - Decide if the model is sufficient or if we need to redesign and relearn
+3. Prediction
+    - New data the model has not seen before
+    - Produce predictions from this new data
